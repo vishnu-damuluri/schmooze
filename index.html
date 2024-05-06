@@ -3,12 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="assets\AD-logo-01.png">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/output.css">
+
+  
   <style>
-    
+ @font-face {
+        font-family: 'mandira';
+        src: url('assets/MandiraRegular-w1nnP.ttf') format('truetype');
+        /* Add additional font formats if necessary */
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        /* Ensure the HTML and body elements take up the full height and width of the viewport */
+      }
+      
+      body {
+        background: linear-gradient(-45deg, #ffffff, #F5F0E1, #ffffff, #ffe07a);
+        /* Define a linear gradient background with four colors */
+        background-size: 400% 400%;
+        /* Set the background size to 400% by 400%, creating a larger area for the gradient to animate within */
+        animation: gradient 8s ease infinite;
+        /* Apply the 'gradient' animation to the body element, specifying a duration of 15 seconds, easing function, and infinite iteration */
+      }
+      
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+          /* At the start of the animation, position the gradient at the left-center */
+        }
+        50% {
+          background-position: 100% 50%;
+          /* At the midpoint of the animation, position the gradient at the right-center */
+        }
+        100% {
+          background-position: 0% 50%;
+          /* At the end of the animation, return the gradient to the left-center */
+        }
+        
+      }
+
   </style>
 </head>
 <body>
@@ -137,7 +173,7 @@
             
 
 
-<section>
+<section class="bg-white">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
     <header class="text-left">
       <h2 class="text-xl font-bold text-gray-900 sm:text-3xl"></h2>
